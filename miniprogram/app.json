@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/home",
+    "pages/diagram/diagram",
+    "pages/community/community",
+    "pages/community/publish/publish",
+    "pages/login/login",
+    "pages/shangchuan/shangchuan",
+    "pages/guanyu/guanyu",
+    "pages/qun/qun",
+    "pages/kaifatuandui/kaifatuandui",
+    "pages/xiaochengxu/xiaochengxu",
+    "pages/lianxifangshi/lianxifangshi",
+    "pages/c/c",
+    "pages/java/java",
+    "pages/python/python",
+    "pages/Content/Detail/Detail",
+    "pages/test/test"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [{
+        "pagePath": "pages/home/home",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home_fill.png"
+      },
+      {
+        "pagePath": "pages/diagram/diagram",
+        "iconPath": "images/diagram.png",
+        "selectedIconPath": "images/diagram_fill.png"
+      },
+      {
+        "pagePath": "pages/community/community",
+        "iconPath": "images/community.png",
+        "selectedIconPath": "images/community_fill.png"
+      },
+      {
+        "pagePath": "pages/login/login",
+        "iconPath": "images/account.png",
+        "selectedIconPath": "images/account_fill.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

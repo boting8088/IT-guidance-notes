@@ -1,0 +1,13 @@
+<!--pages/community/publish/publish.wxml-->
+<view class="body">
+	<view class="text">
+		<textarea maxlength="-1" bindblur="addtext" placeholder="这一刻的问题或者想法..."></textarea>
+	</view>
+	<view class="pictures">
+		<block wx:for="{{tempictures}}" wx:key="index">
+			<image class="picture" mode="aspectFill" src="{{item}}" bindtap="previewImage" bindlongpress="deleteImage" data-image="{{item}}" data-index="{{index}}"></image>
+		</block>
+		<image class="add" src="../../../images/add.png" bindtap="addPicture" wx:if="{{num<3}}"></image>
+	</view>
+	<view class="button" bindtap="publish"><button>发表</button></view>
+</view>

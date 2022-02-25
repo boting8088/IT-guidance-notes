@@ -1,0 +1,119 @@
+/* miniprogram/pages/index/index.wxss */
+.container{
+  margin: 20rpx;
+  border-radius: 10rpx;
+}
+.index-swiper{
+  height: 5000rpx;
+  border-radius: 10rpx;
+}
+.index-swiper image{
+  width: 100%;
+  border-radius: 10rpx;
+  overflow: scroll;
+}
+
+
+
+/* 总体部分的样式 */
+.middle-bottom{
+  background-color:  #F8F8F9;
+}
+
+
+
+
+
+
+/* 中间的导航的页面的css信息 */
+.middle-container{
+  margin-top: 15rpx;
+  background-color: #F8F8F9;
+  height: 90rpx;
+  text-align: center;
+  vertical-align: center;
+}
+/* 语言类型的推荐 */
+.index-tab-type{
+  font-size: 12pt;
+  font-weight: 1em;
+  padding: 30rpx 20rpx;
+  display: flex;
+  text-align: center;
+}
+.index-tab-type view{
+  height: 80rpx;
+  
+  margin: 0rpx 10rpx;
+  flex: 1;
+  text-align: center;
+  border-radius: 50rpx; 
+  background-color: #F0F0F0;
+}
+.index-tab-type view.active{
+  background-color: #E7F3EA;
+  color: #56C86C;
+}
+
+/* 年级的分类 */
+.index-tab-college{
+  padding: 30rpx 20rpx;
+  padding-top: 5rpx;
+  display: flex;
+  text-align: center;
+}
+.index-tab-college view{
+  height: 80rpx;
+  
+  margin: 0rpx 10rpx;
+  flex: 1;
+  text-align: center;
+  border-radius: 50rpx; 
+  background-color: #F0F0F0;
+}
+.index-tab-college view.active{
+  background-color: #E7F3EA;
+  color: #56C86C;
+}
+
+/* 内容的样式 */
+.content{
+  background-color: #F8F9F9;
+  margin-top: 180rpx;
+}
+
+navigator{
+  width: 90%;
+  margin: 1000rpx auto;
+  height: 50rpx;
+  background-color: white;
+}
+navigator text{
+  padding-top: 15rpx;
+  padding-left: 15rpx;
+} 
+
+
+
+
+/*空白部分的样式*/
+.black{
+  background-color: #F8F9F9;
+  height: 10px;
+}
+.finally{
+  height: 5px;
+}
+
+.navigator{
+  border-radius: 10px;
+  width: 90%;
+  margin: 10px auto;
+  height: 50px;
+  background-color: white;
+}
+
+.navigator .whole{
+  padding-top: 15px;
+  padding-left: 15px;
+}

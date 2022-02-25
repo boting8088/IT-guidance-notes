@@ -1,0 +1,39 @@
+/* pages/community/publish/publish.wxss */
+.body {
+  margin: 30rpx;
+}
+.text textarea{
+  width: 100%;
+}
+
+.pictures {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 20rpx;
+  margin-bottom: 30rpx;
+}
+
+.picture {
+  width: 220rpx;
+  height: 220rpx;
+}
+
+.add {
+  width: 100rpx;
+  height: 100rpx;
+  background-color: rgb(203, 203, 203);
+  padding: 60rpx;
+}
+
+.button {
+  width: 100%;
+  height: 150rpx;
+}
+
+.button button {
+  float: right;
+  width: 200rpx;
+  color: white;
+  background-color: #00A99D;
+}

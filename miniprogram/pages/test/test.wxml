@@ -1,0 +1,12 @@
+<view class="test">
+	<button class="button" open-type="getUserInfo" bindgetuserinfo="getuserinfo" size="mini">进入IT世界</button>
+</view>
+<view class="test" bindtap="ontest">测试按钮</view>
+<view class="test" bindtap="onclick">点击按钮</view>
+<view class="input" wx:if="{{input}}" style="top:{{top-100}}rpx;">
+	<input placeholder="想评论点什么呢..." focus="true" confirm-type="send" adjust-position="{{false}}" />
+</view>
+<view class="test">test1</view>
+<view class="test">test2</view>
+<view class="test">test3</view>
+<view class="test">test4</view>

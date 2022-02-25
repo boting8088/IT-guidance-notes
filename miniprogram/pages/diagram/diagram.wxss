@@ -1,0 +1,31 @@
+/* miniprogram/pages/diagram/diagram.wxss */
+.body{
+  margin: 40rpx;
+}
+.diagram1{
+  background-color: #00A99D;
+  border: 2rpx solid black;
+  border-radius: 50rpx;
+  font-size: 17pt;
+  padding: 60rpx;
+  margin: 20rpx;
+  color: white;
+}
+.diagram2{
+  background-color: #00A99D;
+  border: 2rpx solid black;
+  border-radius: 50rpx;
+  font-size: 17pt;
+  padding: 60rpx;
+  margin: 20rpx;
+  color: white;
+}
+.diagram3{
+  background-color: #00A99D;
+  border: 2rpx solid black;
+  border-radius: 50rpx;
+  font-size: 17pt;
+  padding: 60rpx;
+  margin: 20rpx;
+  color: white;
+}

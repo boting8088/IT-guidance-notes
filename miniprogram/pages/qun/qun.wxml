@@ -1,0 +1,10 @@
+
+<view class="b1" bindtap="c">
+    <text>C/C++讨论群</text>
+</view>
+<view class="b2" bindtap="java">
+    <text>JAVA讨论群</text>
+</view>
+<view class="b3" bindtap="python">
+    <text>Python讨论群</text>
+</view>

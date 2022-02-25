@@ -1,0 +1,62 @@
+<!--miniprogram/pages/index/index.wxml-->
+<!-- 轮播图的部分 -->
+<view class="container">
+  <view class="page-body">
+    <view class="page-section page-section-spacing swiper">
+      <swiper indicator-dots="{{indicatorDots}}"
+        autoplay="{{true}}" interval="{{interval}}" duration="{{duration}}" circular="{{true}}">
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item class = "index-swiper">
+            <image mode='widthFix' class = "images" src="{{item}}"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+</view>
+<view  class="middle-bottom">
+
+
+  <!-- 下面的部分导航 -->
+  <view class="middle-container">
+
+
+
+    <!-- 语言的种类部分 -->
+    <view class = "index-tab-type">
+      <view class="{{current == 'c' ? 'active' : ''}}" data-current="c" bindtap="handlecurrent">C/C++</view>
+      <view class="{{current == 'java' ? 'active' : ''}}"  data-current="java" bindtap="handlecurrent">Java</view>
+      <view class="{{current == 'python' ? 'active' : ''}}"  data-current="python" bindtap="handlecurrent">Python</view>
+    </view>
+
+
+    <!-- 年级的部分 -->
+    <view class = "index-tab-college">
+      <view class="{{college == 'one' ? 'active' : ''}}" data-college="one" bindtap="handlecollege">大一</view>
+      <view class="{{college == 'two' ? 'active' : ''}}" data-college="two" bindtap="handlecollege">大二</view>
+      <view class="{{college == 'three' ? 'active' : ''}}" data-college="three" bindtap="handlecollege">大三</view>
+    </view>
+
+  </view>
+
+
+
+
+
+  <!-- 资料的内容 -->
+
+  <view class="index-list container content">
+    <view class="index-list-item navigator" wx:for="{{listData}}" wx:key="index">
+      <view class="whole" bindtap='onClickDetail'  data-name = "{{item.name}}" data-collections = "{{item.collections}}" data-flag = "{{item.flag}}">
+        <text>{{item.name}}
+          <view class="black"></view>
+        </text>
+      </view>
+    </view>
+  </view>
+  <view class="black finally">                    
+  </view>
+
+
+
+</view>

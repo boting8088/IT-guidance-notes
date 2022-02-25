@@ -1,0 +1,144 @@
+page {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.container {
+  width: 750rpx;
+  height: 150rpx;
+  background-color: white;
+}
+.userinfo{
+  width: 750rpx;
+  height: 150rpx;
+}
+.tou{
+  margin-top: 20rpx;
+  margin-left: 130rpx;
+  font-size: 50rpx;
+}
+.userinfo-avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 200rpx;
+  height: 200rpx;
+  margin: 20rpx 30rpx;
+  margin-left: 70rpx;
+}
+.userinfo-nickname {
+  width: 300rpx;
+  height: 70rpx;
+  padding-left: 20rpx;
+  margin-top: 40rpx;
+  font-size: 50rpx;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.float{
+  float:left;
+}
+.u2{
+  margin-top: 90rpx;
+  width: 100%;
+  height: 50%;
+}
+.list-item{
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 130rpx;
+  margin-top: 20rpx;
+  position: relative;
+  background: white;
+}
+.button{
+  width: 100%;
+  background-color: white;
+  border: none;
+  text-align: left;
+  margin: 0px;
+  line-height: 1.6;
+  border-radius: 0;
+  font-family: fantasy;
+  padding: 10px;
+}
+.list-image{
+  width: 75rpx;
+  height: 75rpx;
+}
+.list-text{
+  color: gray;
+  font-size: 35rpx;
+  margin-left: 50rpx;
+}
+.list-jiantou{
+  margin-left: 650rpx;
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+}
+.line{
+  width: 100%;
+  height: 3rpx;
+  background: lightgray;
+  margin-left: 90rpx;
+}
+.dianji{
+  opacity: 0.9;
+  transform: scale(0.95,0.95);
+  position: relative;
+  top: 3rpx;
+  left: 3rpx;
+  box-shadow: 0rpx 0rpx 8rpx rgba(0,0, 0, .1)inset;
+}
+.uploader, .tunnel {
+  height: auto;
+  padding: 0 0 0 40rpx;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.tunnel {
+  padding: 0 0 0 40rpx;
+}
+
+
+.tunnel-switch {
+  position: absolute;
+  right: 20rpx;
+  top: -2rpx;
+}
+
+.disable {
+  color: #888;
+}
+
+.service {
+  position: fixed;
+  right: 40rpx;
+  bottom: 40rpx;
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+  background: linear-gradient(#007aff, #0063ce);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  transition: all 300ms ease;
+}
+.service:active {
+  box-shadow: none;
+}
+
+.request-text {
+  padding: 20rpx 0;
+  font-size: 24rpx;
+  line-height: 36rpx;
+  word-break: break-all;
+}
+

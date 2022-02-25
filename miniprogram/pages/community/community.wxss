@@ -1,0 +1,190 @@
+/* miniprogram/pages/community/community.wxss */
+.navigation {
+  width: 100%;
+  background-color: white;
+  position: fixed;
+}
+
+.add {
+  position: fixed;
+  float: left;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.article {
+  display: flex;
+  padding-bottom: 15rpx;
+  padding-top: 20rpx;
+}
+
+.user-avatar {
+  flex: 1;
+  width: 90rpx;
+}
+
+.user-avatar image {
+  margin-left: 10rpx;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+
+.body {
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10rpx;
+}
+
+.name-more {
+  flex: auto;
+  padding: 5rpx;
+}
+
+.user-name {
+  float: left;
+}
+
+.user-name text {
+  color: #00A99D;
+  font-size: 11pt;
+}
+
+.more {
+  float: right;
+}
+
+.more image {
+  margin-right: 15rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.content {
+  flex: auto;
+  padding: 5rpx;
+  text-align: justify;
+}
+
+.content text {
+  font-size: 10pt;
+}
+
+.pictures {
+  flex: auto;
+  padding: 5rpx;
+  display: flex;
+  height: 200rpx;
+}
+
+.pictures image {
+  width: 33%;
+  height: 100%;
+  padding-right: 5rpx;
+}
+
+.date-button {
+  flex: auto;
+  padding: 5rpx;
+  height: 40rpx;
+  margin-bottom: 5rpx;
+  display: flex;
+}
+
+.date {
+  flex: auto;
+  display: flex;
+  align-items: center;
+}
+
+.date text {
+  font-size: 8pt;
+}
+
+.button {
+  flex: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.button-like,
+.button-comment {
+  height: 40rpx;
+  margin-right: 15rpx;
+}
+
+.button image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.number {
+  flex: auto;
+  padding: 5rpx;
+  display: flex;
+  align-items: center;
+}
+
+.number image {
+  margin-right: 10rpx;
+  width: 35rpx;
+  height: 35rpx;
+}
+
+.number text {
+  margin-right: 90rpx;
+  font-size: 9pt;
+}
+
+.comments {
+  flex: auto;
+  padding: 5rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.comment {
+  padding: 5rpx;
+  text-align: justify;
+  display: flex;
+}
+
+.comment text {
+  font-size: 9pt;
+}
+
+.input {
+  position: fixed;
+  width: 100%;
+  height: 100rpx;
+  background-color: WhiteSmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input input {
+  width: 95%;
+  height: 70rpx;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.bottom {
+  height: 300rpx;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom text {
+  font-size: large;
+  color: #00A99D;
+}

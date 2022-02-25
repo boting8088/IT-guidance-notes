@@ -1,0 +1,9 @@
+<view class="b1" bindtap="xiaochengxu">
+    <text>小程序介绍</text>
+</view>
+<view class="b2" bindtap="kaifatuandui">
+    <text>开发团队介绍</text>
+</view>
+<view class="b3" bindtap="lianxifangshi">
+    <text>联系方式</text>
+</view>

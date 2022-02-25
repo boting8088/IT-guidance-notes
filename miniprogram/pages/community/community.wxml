@@ -1,0 +1,81 @@
+<!--miniprogram/pages/community/community.wxml-->
+<!--顶部导航栏-->
+<view class="navigation">
+	<!-- 发表按钮 -->
+	<navigator open-type="navigateTo" url="publish/publish">
+		<image class="add" style="width:{{navigationBarHeight-34}}rpx; height:{{navigationBarHeight-34}}rpx; margin-top:{{statusBarHeight+17}}rpx; margin-left:20rpx; " src="../../images/publish.png" />
+	</navigator>
+	<!-- 导航栏和标题 -->
+	<view class="title" style="height:{{navigationBarHeight}}rpx; margin-top:{{statusBarHeight}}rpx;">
+		<text style="font-size:14px;">IT社区</text>
+	</view>
+</view>
+<!--社区-->
+<view class="articles">
+	<!-- 顶部空白 -->
+	<view class="top" style="height:{{statusBarHeight+navigationBarHeight}}rpx;"></view>
+	<block wx:for="{{article}}" wx:key="id">
+		<!-- 单个文章 -->
+		<view class="article">
+			<!-- 用户头像 -->
+			<view class="user-avatar" wx:if="{{item.avatar}}">
+				<image src="{{item.avatar}}" bindtap="previewImage" data-image="{{item.avatar}}" />
+			</view>
+			<view class="body">
+				<view class="name-more">
+					<!-- 用户昵称 -->
+					<view class="user-name">
+						<text selectable="ture">{{item.name}}</text>
+					</view>
+					<!-- 更多 -->
+					<view class="more" bindtap="">
+						<image src="../../images/more.png"></image>
+					</view>
+				</view>
+				<!-- 文章内容 -->
+				<view class="content">
+					<text selectable="ture">{{item.content}}</text>
+				</view>
+				<!-- 附图 -->
+				<view class="pictures" wx:if="{{item.pictures.length}}">
+					<block wx:for="{{item.pictures}}" wx:key="id">
+						<image mode="aspectFill" src="{{item}}" bindtap="previewImage" data-image="{{item}}" />
+					</block>
+				</view>
+				<view class="date-button">
+					<!-- 发布时间 -->
+					<view class="date">
+						<text>{{item.date}}</text>
+					</view>
+					<view class="button">
+						<!-- 点赞按钮 -->
+						<view class="button-like" bindtap="onlike" data-index="{{index}}">
+							<image src="{{item.islike ? '../../images/like_fill.png' : '../../images/like.png'}}" />
+						</view>
+						<!-- 评论按钮 -->
+						<view class="button-comment" bindtap="oncomment" data-index="{{index}}">
+							<image src="{{item.iscomment ? '../../images/comment_fill.png' : '../../images/comment.png'}}" />
+						</view>
+					</view>
+				</view>
+
+				<!-- 点赞和评论人数 -->
+				<view class="number">
+					<image src="../../images/like_fill.png" /><text>{{item.like.length}}人觉得很赞</text>
+					<image src="../../images/comment_fill.png" /><text>{{item.comment.length}}条评论回复</text>
+				</view>
+				<!-- 评论区 -->
+				<view class="comments">
+					<view class="comment" wx:for="{{item.comment}}" wx:key="id">
+						<text><text style="color:#00A99D;">{{item.name}}：</text>{{item.content}}</text>
+					</view>
+				</view>
+			</view>
+		</view>
+		<view class="input" wx:if="{{item.iscomment}}" style="top:{{top-100}}rpx;">
+			<input bindconfirm="getcontent" bindblur="onblur" data-index="{{index}}" placeholder="想评论点什么呢..." focus="true" confirm-type="send" adjust-position="{{false}}" />
+		</view>
+	</block>
+	<!-- 底部 -->
+	<view class="bottom"><text>You build it, you run it.</text></view>
+</view>

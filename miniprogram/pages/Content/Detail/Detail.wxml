@@ -1,0 +1,19 @@
+<!--miniprogram/pages/Content/Detail/Detail.wxml-->
+<view class="container-title">
+  <text class="title">{{name}}</text>
+</view>
+
+
+<!-- 资料的连接 -->
+  <view class="index-list container content">
+    <view class="index-list-item navigator" wx:for="{{listData}}" wx:key="index">
+      <view class="whole" data-name = "{{item.name}}">
+        <text class="text" selectable="true">{{item.name}}
+          <view class="black"></view>
+        </text>
+      </view>
+    </view>
+  </view>
+
+  <view class="black finally">                    
+  </view>

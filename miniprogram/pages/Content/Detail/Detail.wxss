@@ -1,0 +1,68 @@
+/* miniprogram/pages/Content/Detail/Detail.wxss */
+
+/* 标题的样式 */
+.container-title{
+  text-align: center;
+}
+.title{
+  font-weight: bold;
+  font-size: 20pt;
+}
+
+/* 总体部分的样式 */
+.middle-bottom{
+  background-color:  #F8F8F9;
+}
+
+/* 内容的样式 */
+.content{
+  background-color: #F8F9F9;
+  margin-top: 180rpx;
+}
+
+navigator{
+  width: 90%;
+  height: 50rpx;
+  background-color: white;
+}
+navigator text{
+  font-size: 20rpx;
+  padding-top: 15rpx;
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+} 
+
+
+
+
+/*空白部分的样式*/
+.black{
+  background-color: #F8F9F9;
+  height: 10rpx;
+}
+.finally{
+  height: 5rpx;
+}
+
+.navigator{
+  font-size: 9pt;
+  text-align: center;
+  border-radius: 10rpx;
+  width: 90%;
+  margin: 40rpx auto;
+  height: 100rpx;
+  background-color: white;
+}
+
+.navigator .whole{
+  padding-top: 5rpx;
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+  margin-right: 20rpx;
+}
+
+.content{
+  margin-top: 50rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}

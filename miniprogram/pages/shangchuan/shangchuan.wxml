@@ -1,0 +1,7 @@
+<form bindsubmit="goToHouTai">
+      <textarea name="url" maxlength="500" class="weui-textarea" placeholder="请输入资料网址">    
+      </textarea>      
+      <button formType="submit" disabled="{{subdisabled}}" type="primary" size="mini" 
+      bindtap="getData">
+      上传</button>
+ </form>

@@ -1,0 +1,6 @@
+<!--miniprogram/pages/diagram/diagram.wxml-->
+<view class="body">
+	<view class="diagram1" bindtap="previewImage1">C/C++</view>
+	<view class="diagram2" bindtap="previewImage2">Java</view>
+	<view class="diagram3" bindtap="previewImage3">Python</view>
+</view>

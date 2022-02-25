@@ -1,0 +1,30 @@
+/* miniprogram/pages/index/index.wxss */
+.background {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(https://s1.ax1x.com/2020/05/08/YnUOB9.jpg);
+  background-size: cover;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  padding-top: 25vh;
+  padding-bottom: 15vh;
+}
+
+.icon image {
+  width: 300rpx;
+  height: 300rpx;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid white;
+  color: white;
+}

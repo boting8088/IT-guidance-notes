@@ -1,0 +1,45 @@
+<view class="container">
+  <view class="userinfo">
+    <!-- hasUserInfo为false表示没有用户信息，就显示获取头像昵称的按钮 -->
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" type="primary" class="tou" size="mini" style="  font-size: 20px;"> 获取头像昵称 </button>
+    <!-- 表示有用户信息，就显示头像和昵称 -->
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar float" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname float">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+</view>
+<view class="u2">
+    <view class="list-item" hover-class="dianji" bindtap="goToShangChuan">
+        <image class="list-image" src="../../images/shangchuanziliao.png"></image>
+        <button class="button">
+        <text class="list-text">上传资料</text>
+        </button>
+        <image class="list-jiantou" src="../../images/arrow.png"></image>
+    </view>
+        <view class="line"></view>  
+     <view class="list-item" hover-class="dianji">
+        <image class="list-image" src="../../images/question.png"></image>
+             <button class="button" open-type="feedback">
+        <text class="list-text">问题反馈</text>
+                </button>
+        <image class="list-jiantou" src="../../images/arrow.png"></image>
+    </view>
+        <view class="line"></view>  
+    <view class="list-item" hover-class="dianji" bindtap="goToGuanYu">
+        <image class="list-image" src="../../images/about.png"></image>
+        <button class="button">
+        <text class="list-text">关于我们</text>
+        </button>
+        <image class="list-jiantou" src="../../images/arrow.png"></image>
+    </view>
+        <view class="line"></view>  
+    <view class="list-item" hover-class="dianji" bindtap="goToQun">
+        <image class="list-image" src="../../images/QQ.png"></image>
+        <button class="button">
+        <text class="list-text">讨论群</text>
+        </button>
+        <image class="list-jiantou" src="../../images/arrow.png"></image>
+    </view> 
+    <view class="line"></view>          
+</view>     

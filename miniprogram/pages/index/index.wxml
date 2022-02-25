@@ -1,0 +1,9 @@
+<!--miniprogram/pages/index/index.wxml-->
+<view class="background" bindtap="click">
+	<view class="icon">
+		<image src="../../images/IT.png" animation="{{animation1}}"></image>
+	</view>
+	<view class="box">
+		<button class="button" animation="{{animation2}}" open-type="getUserInfo" bindgetuserinfo="getuserinfo" loading="{{isloading}}">进入IT世界</button>
+	</view>
+</view>
